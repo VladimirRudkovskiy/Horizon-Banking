@@ -35,7 +35,7 @@ const RightSidebar = ({ user, transactions, banks } :
 							height={20}
 							alt="plus"
 						/>
-						<h2 className="text-14 font-semibold text-grey-600">
+						<h2 className="text-14 font-semibold text-gray-600">
 							Add Bank
 						</h2>
 					</Link>
