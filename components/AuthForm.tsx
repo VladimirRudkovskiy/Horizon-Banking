@@ -56,21 +56,20 @@ const AuthForm = ({ type }: { type : string }) => {
 				}
 			
 
-			if(type ==='sign-in') {
-				// const response = await signIn({
-				// 	email: data.email,
-				// 	password: data.password
-				// })
+				if(type === 'sign-in') {
+          const response = await signIn({
+            email: data.email,
+            password: data.password,
+          })
 
-				// if(response) router.push('/')
-			}
-
-		} catch (error) {
-			console.log(error);
-		} finally {
-			setIsLoading(false);
-		}
-  }
+          if(response) router.push('/')
+        }
+      } catch (error) {
+        console.log(error);
+      } finally {
+        setIsLoading(false);
+      }
+    }
 
 	return (
 		<section className="auth-form">
