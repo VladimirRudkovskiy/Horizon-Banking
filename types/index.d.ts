@@ -34,7 +34,7 @@ declare type User = {
   firstName: string;
   lastName: string;
   address1: string;
-	name: string;
+  name: string;
   city: string;
   state: string;
   postalCode: string;
@@ -211,7 +211,7 @@ declare interface TotalBalanceBoxProps {
 
 declare interface FooterProps {
   user: User;
-	type?: 'mobile' | 'desctop';
+	type?: 'mobile' | 'desktop';
 }
 
 declare interface RightSidebarProps {
