@@ -7,15 +7,15 @@ import React from 'react'
 const Home = async () => {
 	const loggedIn = await getLoggedInUser();
 	return (
-		<section className='home'>
-			<div className='home-content'>
-				<header className='home-header'>
-					<HeaderBox 
-					type="greeting"
-					title="Welcome"
-					user={loggedIn?.name || 'Guest'}
-					subtext="Access and manage your account and transactions efficiently."
-					/>
+    <section className="home">
+      <div className="home-content">
+        <header className="home-header">
+          <HeaderBox 
+            type="greeting"
+            title="Welcome"
+						user={loggedIn?.name || 'Guest'}
+            subtext="Access and manage your account and transactions efficiently."
+          />
 
 					<TotalBalanceBox
 					accounts= { [] }

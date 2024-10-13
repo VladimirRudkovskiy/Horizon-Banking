@@ -11,7 +11,7 @@ const RightSidebar = ({ user, transactions, banks } :
 				<div className="profile-banner" />
 				<div className="profile">
 					<div className="profile-img">
-						<span className="text-5xl font-bold text-blue-500 ">{user.name[0]}</span>
+					<span className="text-5xl font-bold text-blue-500">{user.name[0]}</span>
 
 					</div>
 					<div className="profile-details">
@@ -45,8 +45,8 @@ const RightSidebar = ({ user, transactions, banks } :
 					<div className="relative flex flex-1 flex-col items-center justify-center gap-5">
 						<div className='relative z-10'>
 							<BankCard 
-							key={banks[0].$id}
-							account={banks[0]}
+							key={banks[1].$id}
+							account={banks[1]}
 							userName={user.name}
 							showBalance={false}
 							/>
